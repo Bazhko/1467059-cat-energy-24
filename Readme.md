@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Anton Bazhko](https://up.htmlacademy.ru/adaptive/24/user/1467059).
-* Наставник: `Неизвестно`.
+* Наставник: [Влад Повелица](https://htmlacademy.ru/profile/id788487).
 
 ---
 
