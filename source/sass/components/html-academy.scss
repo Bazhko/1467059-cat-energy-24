@@ -1,0 +1,11 @@
+.html-academy {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.html-academy__link {
+  text-decoration: none;
+  color: $special_dark-grey;
+}

@@ -1,0 +1,26 @@
+.facts-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.facts-list-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.facts-list-title {
+  margin-bottom: 8.5px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.facts-list-description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  color: $special_dark-grey;
+}
+
