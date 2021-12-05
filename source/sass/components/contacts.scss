@@ -1,5 +1,9 @@
 .contacts {
   padding-top: 26px;
+
+  &_basic-grey {
+    background-color: $basic_grey;
+  }
 }
 
 .contacts__wrapper {
