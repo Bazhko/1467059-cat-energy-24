@@ -1,0 +1,22 @@
+.show-more {
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 25px 20px;
+}
+
+.show-more__plus-icon {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 72px;
+  color: #d3d3d3;
+
+}
+
+.show-more__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.show-more__button {
+  color: $special_dark-grey;
+  background-color: $basic_grey;
+}
