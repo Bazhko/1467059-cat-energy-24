@@ -9,6 +9,7 @@
 .contacts__wrapper {
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .contacts__text {
@@ -28,5 +29,7 @@
 }
 
 .contacts__map {
+  width: 100%;
+  height: auto;
   margin-top: 26px;
 }
