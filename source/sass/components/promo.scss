@@ -8,7 +8,7 @@
 
 .promo__section-heading {
   margin: 27px 0 25px 0;
-  color: #ffffff;
+  color: $clear-white;
   text-align: center;
 }
 
@@ -20,7 +20,7 @@
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $clear-white;
 }
 
 .promo__bg-wrapper {
@@ -41,10 +41,6 @@
   background-image: url("../../img/promo_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.promo__bg-color {
-  background-color: rgba(104, 183, 56, 0.85);
 }
 
 .promo_img {

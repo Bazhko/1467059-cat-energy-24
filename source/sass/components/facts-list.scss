@@ -3,13 +3,13 @@
   justify-content: space-between;
 }
 
-.facts-list-item-wrapper {
+.facts-list__item-wrapper {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.facts-list-title {
+.facts-list__title {
   margin-bottom: 8.5px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -17,7 +17,7 @@
   line-height: 24px;
 }
 
-.facts-list-description {
+.facts-list__description {
   margin: 0;
   font-size: 12px;
   line-height: 12px;

@@ -1,13 +1,13 @@
 .show-more {
   text-align: center;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $special_light-grey;
   padding: 25px 20px;
 }
 
 .show-more__plus-icon {
   font-family: "Times New Roman", sans-serif;
   font-size: 72px;
-  color: #d3d3d3;
+  color: $plus-icon-grey;
 }
 
 .show-more__text {

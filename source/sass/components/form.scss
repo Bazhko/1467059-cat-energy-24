@@ -6,7 +6,7 @@
   border: none;
 
   &_underlined {
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid $special_light-grey;
     padding-bottom: 24px;
   }
 }
@@ -91,7 +91,7 @@
 }
 
 .form__input {
-  border: 1px solid #e7e7e7;
+  border: 1px solid $input-line_grey;
 
   &_text {
     padding: 0;
@@ -146,7 +146,7 @@
   width: 30px;
   height: 30px;
   margin-left: -50px;
-  border: 1px solid #cdcdcc;
+  border: 1px solid $light-grey;
   border-radius: 50%;
 }
 
@@ -168,7 +168,7 @@
   width: 30px;
   height: 30px;
   margin-left: -50px;
-  border: 1px solid #cdcdcc;
+  border: 1px solid $light-grey;
 }
 
 .form__input_checkbox:checked + .form__check-box {

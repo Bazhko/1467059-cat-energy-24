@@ -8,7 +8,7 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(3, 1fr);
   padding: 19px 20px 25px 20px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $special_light-grey;
 }
 
 .catalog-products__item-heading {
@@ -24,7 +24,7 @@
   justify-self: center;
 }
 
-.catalog-products__item-specs {
+.catalog-products__specs {
   display: flex;
   flex-direction: column;
   grid-column: 2 / 3;
@@ -33,12 +33,13 @@
   line-height: 16px;
 }
 
-.catalog-products__item-specs-wrapper {
+.catalog-products__specs-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-.button_catalog_order {
+.catalog-product__button_order {
   grid-column: 1 / -1;
   grid-row: 3 / 4;
   font-size: 16px;
