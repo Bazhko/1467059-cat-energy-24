@@ -1,0 +1,31 @@
+.catalog-promo {
+  padding: 35px 20px;
+}
+
+.catalog-promo__bg-img {
+  min-width: 279px;
+  background-image: url("../../img/catalog-promo__bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.catalog-promo__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 289px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $transparent_green;
+}
+
+.catalog-promo__icon {
+  margin-top: 40px;
+}
+
+.catalog-promo__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic_grey;
+  text-align: center;
+}

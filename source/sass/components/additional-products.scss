@@ -1,0 +1,28 @@
+.additional-products {
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+}
+
+.additional-products__section-heading {
+  padding: 25px 0 36px 0;
+  font-size: 24px;
+  line-height: 24px;
+  border-bottom: 1px solid $light-grey;
+}
+
+.additional-products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.additional-products__item {
+  padding-bottom: 19px;
+  border-bottom: 1px solid $light-grey;
+}
+
+.additional-products__specs {
+  display: flex;
+  justify-content: space-between;
+}
