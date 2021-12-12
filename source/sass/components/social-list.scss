@@ -1,8 +1,33 @@
 .social-list {
   display: flex;
-  padding: 0;
+  width: 100%;
+  padding: 0 20px;
   flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
+  list-style: none;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 29px;
+}
+
+@media (min-width: $tablet-width) {
+    .social-list__icon {
+    &_vk {
+      width: 29px;
+      height: 17px;
+    }
+
+    &_insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &_fb {
+      width: auto;
+      height: 27px;
+    }
+  }
 }

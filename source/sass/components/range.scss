@@ -42,3 +42,42 @@
   background-color: inherit;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .range__text {
+    font-size: 20px;
+  }
+
+  .range__scale {
+    height: 6px;
+    padding: 3px 0;
+    background-color: $light-grey_range-bar;
+    border: none;
+  }
+
+  .range__bar {
+    background-color: transparent;
+  }
+
+  .range__toggle {
+    top: -17px;
+    left: calc(100% - 16px);
+    width: 34px;
+    height: 34px;
+    background-color: $clear-white;
+    border-radius: 50%;
+    border: 1px solid $light-grey;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 4px);
+      left: calc(50% - 4px);
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: $basic_green;
+      border-radius: 50%;
+    }
+  }
+}

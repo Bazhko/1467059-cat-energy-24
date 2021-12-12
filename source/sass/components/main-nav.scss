@@ -67,3 +67,37 @@
   text-decoration: none;
   color: $clear-black;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-image {
+    margin-right: 12px;
+  }
+
+  .main-nav {
+    margin: 0 0 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    position: static;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .site-nav__item {
+    border: none;
+    min-height: 36px;
+
+
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+
+    &_active {
+    border-bottom: 2px solid $basic_green;
+    }
+  }
+}

@@ -6,7 +6,26 @@
   align-items: center;
 }
 
+.html-academy__name {
+  white-space: nowrap;
+}
+
 .html-academy__link {
   text-decoration: none;
   color: $special_dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .html-academy {
+    width: min-content;
+  }
+
+  .html-academy__logo {
+    height: auto;
+    width: 37px;
+  }
+
+  .html-academy__name {
+    margin-right: 22px;
+  }
 }
