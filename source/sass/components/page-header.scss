@@ -7,4 +7,30 @@
   justify-content: space-between;
   align-items: center;
   line-height: 8px;
+  z-index: 2;
+}
+
+.page-header__logo-image_desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-image_mobile {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 55px;
+  }
+
+  .page-header__logo-image_mobile {
+    display: none;
+  }
+
+  .page-header__logo-image_desktop {
+    display: inline-block;
+    margin-right: 15px;
+  }
 }

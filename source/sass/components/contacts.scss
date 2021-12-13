@@ -61,6 +61,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
+    padding-top: 0;
   }
 
   .contacts__wrapper {
@@ -76,5 +77,9 @@
 
   .contacs__address {
     text-align: left;
+  }
+
+  .contacts__map {
+    margin-top: 0;
   }
 }
