@@ -30,11 +30,14 @@
 
 .contacts__map {
   width: 100%;
-  height: auto;
   margin-top: 26px;
 }
 
 @media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding: 0 69px;
+  }
+
   .contacts__text {
     width: 172px;
     font-size: 20px;
@@ -53,7 +56,6 @@
   }
 
   .contacts__map {
-    width: 768;
     min-height: 400px;
   }
 }

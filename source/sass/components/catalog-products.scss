@@ -7,8 +7,9 @@
 .catalog-products__item {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(3, 1fr);
-  padding: 19px 0 25px 0;
+  grid-template-rows: 1fr 1fr 40px;
+  margin: 0 -20px;
+  padding: 19px 20px 25px 20px;
   border-bottom: 1px solid $special_light-grey;
 }
 
@@ -47,10 +48,22 @@
   line-height: 20px;
 }
 
-.catalog-products__show-more {
+.catalog-products__item_show-more {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
+.catalog-products__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-product__button_show-more {
+  color: $special_dark-grey;
+  background-color: $basic_grey;
+}
+
 
 @media (min-width: $tablet-width) {
   .catalog-products__list {
@@ -61,20 +74,31 @@
   }
 
   .catalog-products__item {
+    margin: 0;
     padding: 8px 37px 39px 39px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto auto;
+    grid-template-rows: 1fr auto 157px 40px;;
     background: linear-gradient($clear-white 20%, $basic_grey 20%);
     border: none;
   }
 
+  .catalog-products__item-img_small {
+    width: 161px;
+    height: auto;
+  }
+
+  .catalog-products__item-img_big {
+    width: 168px;
+    height: auto;
+  }
+
   .catalog-products__item-heading {
-    width: 130px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
 
   .item-heading {
+    width: 140px;
     justify-self: center;
     text-align: center;
     font-size: 20px;
@@ -99,8 +123,35 @@
   }
 
   .catalog-product__button_order {
-    min-height: 40px;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
+  }
+
+  .catalog-products__item_show-more {
+    padding: 8px 37px 39px 39px;
+    background: $clear-white;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid $basic_grey;
+  }
+
+  .catalog-products__text {
+    width: 180px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .show-more__button {
+    min-height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-products__list {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    row-gap: 20px;
   }
 }

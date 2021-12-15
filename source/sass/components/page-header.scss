@@ -8,15 +8,31 @@
   align-items: center;
   line-height: 8px;
   z-index: 2;
+  border-bottom: 1px solid $special_light-grey;
 }
 
-.page-header__logo-image_desktop {
+.page-header__logo-image {
+  &_tablet,
+  &_desktop {
   display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__logo-image_mobile {
+  .page-header__logo-image {
     margin-right: 12px;
+
+    &_mobile {
+      display: none;
+    }
+
+    &_tablet {
+      display: block;
+    }
+  }
+
+  .page-header__wraper {
+    border-bottom: none;
   }
 }
 
@@ -25,12 +41,15 @@
     padding-top: 55px;
   }
 
-  .page-header__logo-image_mobile {
-    display: none;
-  }
-
-  .page-header__logo-image_desktop {
-    display: inline-block;
+  .page-header__logo-image {
     margin-right: 15px;
+
+    &_tablet {
+      display: none;
+    }
+
+    &_desktop {
+      display: block;
+    }
   }
 }

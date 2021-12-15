@@ -1,0 +1,9 @@
+.page-main__wrapper {
+  border-bottom: 1px solid $special_light-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__wrapper {
+    border-bottom: none;
+  }
+}
