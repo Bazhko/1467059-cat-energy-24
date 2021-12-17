@@ -1,4 +1,5 @@
 .facts-list {
+  position: relative;
   display: grid;
   margin-top: 30px;
   grid-template-columns: repeat(2, 124px);
@@ -14,8 +15,12 @@
 
   &_weight,
   &_time {
+    position: absolute;
     width: 100%;
+    height: 56px;
     grid-row: 1 / 2;
+    border: 1px solid $light-grey;
+    border-radius: 3px;
   }
 
   &_weight {
@@ -37,22 +42,8 @@
   }
 }
 
-.facts-list__item_weight,
-.facts-list__item_time {
-  position: relative;
-}
-
-.facts-list__border {
-  position: absolute;
-  width: 124px;
-  height: 56px;
-  border: 1px solid $light-grey;
-  border-radius: 3px;
-  top: -15px;
-}
-
 .facts-list__item_weight .facts-list__description,
-.facts-list__item_time .facts-list__description{
+.facts-list__item_time .facts-list__description {
   width: 77px;
   align-self: center;
   background-color: $basic_grey;
@@ -60,14 +51,14 @@
 }
 
 .facts-list__title {
-  margin-bottom: 9px;
+  margin: 15px 0 9px 0;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
 
   &_cost {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 14px;
   }
 }
@@ -79,7 +70,7 @@
   color: $special_dark-grey;
 
   &_cost {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 14px;
   }
 }
@@ -101,6 +92,11 @@
       flex-direction: column;
       align-items: end;
       justify-content: flex-start;
+    }
+
+    &_weight,
+    &_time {
+     height: 72px;
     }
   }
 
@@ -145,8 +141,9 @@
 @media (min-width: $desktop-width) {
   .facts-list {
     grid-template-columns: 162px 162px;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 72px auto;
     column-gap: 42px;
+    row-gap: 47px;
   }
 
   .facts-list__item_cost {
