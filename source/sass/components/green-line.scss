@@ -1,0 +1,16 @@
+.green-line {
+  position: absolute;
+  top: 40px;
+  z-index: 1;
+  height: 2px;
+  width: calc(100% - 20px);
+  margin-left: 20px;
+  background-color: $basic-green;
+}
+
+@media (min-width: $tablet-width) {
+  .green-line {
+    width: 100%;
+    margin-left: 0;
+  }
+}

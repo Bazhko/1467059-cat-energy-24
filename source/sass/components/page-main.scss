@@ -1,9 +1,11 @@
 .page-main__wrapper {
+  padding: 25px 20px 41px 20px;
   border-bottom: 1px solid $special_light-grey;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__wrapper {
+    padding: 45px 30px 0 30px;
     border-bottom: none;
   }
 }
