@@ -7,7 +7,7 @@
   min-height: 302px;
   padding-top: 27px;
   z-index: 2;
-  background: url("../../img/promo-can-mobile.png");
+  background: url("../img/promo-can-mobile.png");
   background-repeat: no-repeat;
   background-position: 50% 75%;
 }
@@ -18,7 +18,7 @@
   min-height: 302px;
   z-index: 1;
   background: $basic_green;
-  background-image: url("../../img/promo_bg-mobile.jpg");
+  background-image: url("../img/promo_bg-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -52,7 +52,7 @@
 
   .promo__wrapper_content {
     padding: 50px 230px 528px 90px;
-    background: url("../../img/promo-can-tablet.png") 41% 92% no-repeat;
+    background: url("../img/promo-can-tablet.png") 41% 92% no-repeat;
     background-size: 709px 609px;
   }
 
@@ -93,7 +93,7 @@
     display: block;
     width: 50%;
     min-height: 694px;
-    background-image: url("../../img/promo_bg-desktop.jpg");
+    background-image: url("../img/promo_bg-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
