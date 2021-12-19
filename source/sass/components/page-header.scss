@@ -2,6 +2,7 @@
   padding-top: 10px;
   padding-bottom: 17px;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   line-height: 8px;
@@ -9,10 +10,29 @@
   border-bottom: 1px solid $special_light-grey;
 }
 
+.page-header__logo {
+  &_image {
+    margin-left: 0;
+  }
+}
+
 .page-header__logo-image {
   &_tablet,
   &_desktop {
     display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header__wraper {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .page-header__logo {
+    &_text {
+      margin: 0 auto;
+    }
   }
 }
 
