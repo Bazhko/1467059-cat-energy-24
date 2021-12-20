@@ -17,7 +17,7 @@
       <a class="page-header__logo page-header__logo_text">
         <img class="page-header__logo-text" src="img/logo_name.svg" width="101" height="18" alt="Интернет-магазин Cat Energy">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav_closed main-nav_no-js">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
           <span class="main-nav__toggle-line main-nav__toggle-line_first"></span>
@@ -189,7 +189,7 @@
           </fieldset>
           <fieldset class="facts-list__item facts-list__item_time">
             <legend class="facts-list__description">затрачено времени</legend>
-            <span class="facts-list__title">60 ДНЕЙ</span>
+            <span class="facts-list__title">60 дней</span>
           </fieldset>
           <div class="facts-list__item facts-list__item_cost">
             <span class="facts-list__title facts-list__title_cost">Затраты на питание:</span>
@@ -268,5 +268,22 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav_no-js');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav_closed')) {
+        navMain.classList.remove('main-nav_closed');
+        navMain.classList.add('main-nav_opened');
+      } else {
+        navMain.classList.add('main-nav_closed');
+        navMain.classList.remove('main-nav_opened');
+      }
+    });
+  </script>
 </body>
 </html>
