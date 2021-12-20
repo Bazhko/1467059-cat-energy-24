@@ -12,23 +12,14 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  box-sizing: border-box;
 
   &_weight,
   &_time {
-    position: absolute;
+    transform: rotate(180deg);
     width: 100%;
-    height: 56px;
-    grid-row: 1 / 2;
     border: 1px solid $light-grey;
     border-radius: 3px;
-  }
-
-  &_weight {
-    grid-column: 1 / 2;
-  }
-
-  &_time {
-    grid-column: 2 / 3;
   }
 
   &_cost {
@@ -44,14 +35,17 @@
 
 .facts-list__item_weight .facts-list__description,
 .facts-list__item_time .facts-list__description {
+  transform: rotate(180deg);
   width: 77px;
-  align-self: center;
-  background-color: $basic_grey;
-  z-index: 2;
+}
+
+.facts-list__item_weight .facts-list__title,
+.facts-list__item_time .facts-list__title {
+  transform: rotate(180deg);
 }
 
 .facts-list__title {
-  margin: 15px 0 9px 0;
+  margin: 5px 0;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -67,7 +61,6 @@
   margin: 0;
   font-size: 12px;
   line-height: 12px;
-  color: $special_dark-grey;
 
   &_cost {
     font-family: "Oswald", sans-serif;
@@ -93,15 +86,9 @@
       align-items: end;
       justify-content: flex-start;
     }
-
-    &_weight,
-    &_time {
-      height: 72px;
-    }
   }
 
   .facts-list__title {
-    margin-bottom: 14px;
     font-size: 30px;
     line-height: 37px;
 
@@ -110,12 +97,6 @@
       line-height: 20px;
       margin-bottom: 10px;
     }
-  }
-
-  .facts-list__border {
-    width: 162px;
-    height: 72px;
-    top: -15px;
   }
 
   .facts-list__description {
@@ -133,8 +114,6 @@
     width: max-content;
     padding: 0 8px;
     align-self: center;
-    background-color: $clear-white;
-    z-index: 2;
   }
 }
 
@@ -155,10 +134,5 @@
 
   .facts-list__title_cost {
     margin: 0 60px 0 0;
-  }
-
-  .facts-list__item_weight .facts-list__description,
-  .facts-list__item_time .facts-list__description {
-    background-color: $basic_grey;
   }
 }
