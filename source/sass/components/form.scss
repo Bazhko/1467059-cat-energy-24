@@ -20,6 +20,7 @@
 
   &_contacts {
     padding-top: 26px;
+    padding-bottom: 20px;
   }
 
   &_comment {
@@ -58,7 +59,7 @@
     position: relative;
   }
 
-  &_text:not(:last-child) {
+  &_data:not(:last-child) {
     margin-bottom: 15px;
   }
 
@@ -173,6 +174,11 @@
   background: $basic_green;
 }
 
+.form__contact-label-wrapper {
+  display: grid;
+  row-gap: 20px;
+}
+
 .form__check-box {
   position: absolute;
   width: 30px;
@@ -247,13 +253,13 @@
 
   .form__label-wrapper_additional {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
     row-gap: 32px;
   }
 
   .form__legend_additional {
-    grid-column: 1 / 3;
+    grid-column: 1 / 5;
     margin-bottom: 25px;
   }
 
@@ -266,6 +272,13 @@
     margin-left: -60px;
     width: 40px;
     height: 40px;
+  }
+
+  .form__input_radio:checked + .form__radio::before {
+    top: calc(50% - 9px);
+    left: calc(50% - 9px);
+    width: 18px;
+    height: 18px;
   }
 
   .form__button {
@@ -315,5 +328,20 @@
     &:not(:last-child) {
       margin-bottom: 13px;
     }
+  }
+
+  .form__contact-label-wrapper {
+    grid-template-columns: 593px 1fr;
+    column-gap: 78px;
+  }
+
+  .form__button-wrapper {
+    grid-template-columns: 583px 1fr;
+    column-gap: 93px;
+  }
+
+  .form__button {
+    width: 100%;
+    margin-top: 0;
   }
 }

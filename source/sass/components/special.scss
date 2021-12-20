@@ -84,6 +84,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .special {
+    padding-bottom: 10px;
+  }
+
   .special__list {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 95px;

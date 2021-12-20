@@ -91,6 +91,7 @@
 
 @media (min-width: $desktop-width) {
   .exemple {
+    padding-top: 10px;
     background: linear-gradient($clear-white 20%, $basic_grey 20%);
     border-top: none;
   }
