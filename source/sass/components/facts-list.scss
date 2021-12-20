@@ -121,7 +121,7 @@
 @media (min-width: $desktop-width) {
   .facts-list {
     grid-template-columns: 162px 162px;
-    grid-template-rows: auto auto;
+    grid-template-rows: min-content auto;
     column-gap: 42px;
     row-gap: 47px;
   }
