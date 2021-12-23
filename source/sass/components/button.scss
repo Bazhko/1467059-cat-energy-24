@@ -10,7 +10,21 @@
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  color: $clear-white;
-  background-color: $basic_green;
   border: none;
+
+  &_green {
+    color: $clear-white;
+    background-color: $basic_green;
+
+    &:hover {
+      color: $clear-white;
+      background-color: $basic_green-2;
+    }
+
+    &:active {
+      color: fade-out($clear-white, 0.3);
+      background-color: $basic_green-2;
+    }
+  }
 }
+

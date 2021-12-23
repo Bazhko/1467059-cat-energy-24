@@ -150,6 +150,14 @@
     &_active {
       border-bottom: 2px solid $basic_green;
     }
+
+    &:hover .main-nav__link{
+      opacity: 0.6;
+    }
+
+    &:active .main-nav__link{
+      opacity: 0.3;
+    }
   }
 }
 

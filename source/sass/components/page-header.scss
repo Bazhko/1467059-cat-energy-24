@@ -10,10 +10,12 @@
   border-bottom: 1px solid $special_light-grey;
 }
 
-.page-header__logo {
-  &_image {
-    margin-left: 0;
-  }
+.page-header__logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: calc(50% + 50px);
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-header__logo-image {
@@ -26,17 +28,16 @@
 @media (max-width: $mobile-width-only) {
   .page-header__wraper {
     flex-wrap: wrap;
-    justify-content: start;
-  }
-
-  .page-header__logo {
-    &_text {
-      margin: 0 auto;
-    }
   }
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__logo-wrapper {
+    width: max-content;
+    min-width: max-content;
+    justify-content: start;
+  }
+
   .page-header__logo-image {
     margin-right: 12px;
 
