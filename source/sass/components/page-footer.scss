@@ -11,7 +11,7 @@
 .page-footer__text-logo-link {
   display: block;
   width: 100%;
-  padding: 39px 0 32px 0;
+  padding: 39px 0 24px 0;
   text-align: center;
   border-bottom: 1px solid $special_light-grey;
 
@@ -22,10 +22,6 @@
   &:active {
     opacity: 0.6;
   }
-}
-
-.footer__social-list {
-  padding: 23px 20px;
 }
 
 .footer__social-list,

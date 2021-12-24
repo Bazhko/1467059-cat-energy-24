@@ -1,7 +1,7 @@
 .facts-list {
   position: relative;
   display: grid;
-  margin-top: 30px;
+  margin-bottom: 12px;
   grid-template-columns: repeat(2, 124px);
   grid-template-rows: repeat(2, 1fr);
   column-gap: 32px;
@@ -16,8 +16,10 @@
 
   &_weight,
   &_time {
-    transform: rotate(180deg);
     width: 100%;
+    margin: 0;
+    padding: 7px 0 13px 0;
+    transform: rotate(180deg);
     border: 1px solid $light-grey;
     border-radius: 3px;
   }
@@ -45,7 +47,7 @@
 }
 
 .facts-list__title {
-  margin: 5px 0;
+  margin: 0;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -59,7 +61,7 @@
 }
 
 .facts-list__description {
-  margin: 0;
+  margin: 0 0 0 3px;
   font-size: 12px;
   line-height: 12px;
 

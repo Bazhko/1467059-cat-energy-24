@@ -1,6 +1,7 @@
 .html-academy {
   display: flex;
   width: 100%;
+  padding: 17px 0;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +16,13 @@
 }
 
 .html-academy__name {
+  margin: 0;
+  padding-bottom: 3px;
   white-space: nowrap;
+}
+
+.html-academy__logo {
+  margin-top: 5px;
 }
 
 .html-academy__link {

@@ -1,5 +1,5 @@
 .exemple {
-  padding: 25px 0 40px 0;
+  padding: 27px 0 45px 0;
   background: $basic_grey;
 }
 
@@ -14,11 +14,11 @@
 }
 
 .exemple__section-heading {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .exemple__text {
-  margin: 0;
+  margin: 0 0 20px 0;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
@@ -28,6 +28,7 @@
   position: relative;
   display: flex;
   min-height: 232px;
+  margin-bottom: 20px;
 }
 
 .exemple__cat {
