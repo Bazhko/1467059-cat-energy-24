@@ -7,7 +7,6 @@
   align-items: center;
   line-height: 8px;
   z-index: 2;
-  border-bottom: 1px solid $special_light-grey;
 }
 
 .page-header__logo-wrapper {
@@ -16,6 +15,16 @@
   width: calc(50% + 50px);
   justify-content: space-between;
   align-items: center;
+}
+
+.page-header__logo-link {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__logo-image {
@@ -36,6 +45,14 @@
     width: max-content;
     min-width: max-content;
     justify-content: start;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .page-header__logo-image {

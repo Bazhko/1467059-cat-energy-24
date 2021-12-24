@@ -26,5 +26,19 @@
       background-color: $basic_green-2;
     }
   }
+
+  &_grey {
+    color: $special_dark-grey;
+    background-color: $basic_grey;
+
+    &:hover {
+      background-color: $basic_grey-2;
+    }
+
+    &:active {
+      color: fade-out($special_dark-grey, 0.3);
+      background-color: $basic_grey-2;
+    }
+  }
 }
 

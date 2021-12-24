@@ -9,6 +9,16 @@
   list-style: none;
 }
 
+.social-list__icon {
+  &:hover path {
+    stroke: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .social-list__item:not(:last-child) {
   margin-right: 29px;
 }
