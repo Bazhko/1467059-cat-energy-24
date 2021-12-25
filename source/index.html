@@ -11,9 +11,11 @@
     <div class="wrapper page-header__wraper">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo page-header__logo_image">
-          <img class="page-header__logo-image page-header__logo-image_mobile" src="img/logo_mobile.svg" width="33" height="38" alt="Логотип">
-          <img class="page-header__logo-image page-header__logo-image_tablet" src="img/logo_tablet.svg" width="70" height="59" alt="Логотип">
-          <img class="page-header__logo-image page-header__logo-image_desktop" src="img/logo_desktop.svg" width="70" height="59" alt="Логотип">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo_desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo_tablet.svg">
+            <img class="page-header__logo-image" src="img/logo_mobile.svg" width="33" height="38" alt="Логотип">
+          </picture>
         </a>
         <a class="page-header__logo page-header__logo_text">
           <img class="page-header__logo-text" src="img/logo_name.svg" width="101" height="18" alt="Интернет-магазин Cat Energy">

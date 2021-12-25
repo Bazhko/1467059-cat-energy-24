@@ -39,10 +39,14 @@
 }
 
 .exemple__cat_fat {
-  background: url("../img/exemple_cat-fat.png");
-  background-repeat: no-repeat;
-  background-position: center;
   z-index: 2;
+  background: url("../img/exemple_cat-mobile.png") center no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/exemple_cat-mobile@2x.png") center no-repeat;
+    background-size: contain;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -73,20 +77,29 @@
   }
 
   .exemple__cat_fat {
-    background: url("../img/exemple_cat-fat-tablet.png");
-    background-repeat: no-repeat;
-    background-position: left;
     z-index: 2;
     width: 50%;
+    background: url("../img/exemple_cat-fat-tablet.png") left no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/exemple_cat-fat-tablet@2x.png") left no-repeat;
+      background-size: cover;
+    }
   }
 
   .exemple__cat_skinny {
-    background: url("../img/exemple_cat-skinny.png");
-    background-repeat: no-repeat;
-    background-position: right;
     z-index: 1;
     width: 50%;
     right: 0;
+    background: url("../img/exemple_cat-skinny-tablet.png") right no-repeat;
+    background-size: cover;
+
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/exemple_cat-skinny-tablet@2x.png") right no-repeat;
+      background-size: cover;
+    }
   }
 }
 

@@ -27,13 +27,6 @@
   }
 }
 
-.page-header__logo-image {
-  &_tablet,
-  &_desktop {
-    display: none;
-  }
-}
-
 @media (max-width: $mobile-width-only) {
   .page-header__wraper {
     flex-wrap: wrap;
@@ -57,14 +50,8 @@
 
   .page-header__logo-image {
     margin-right: 12px;
-
-    &_mobile {
-      display: none;
-    }
-
-    &_tablet {
-      display: block;
-    }
+    width: 70px;
+    height: 50px;
   }
 
   .page-header__wraper {
@@ -79,13 +66,7 @@
 
   .page-header__logo-image {
     margin-right: 15px;
-
-    &_tablet {
-      display: none;
-    }
-
-    &_desktop {
-      display: block;
-    }
+    width: 80px;
+    height: 60px;
   }
 }

@@ -70,11 +70,11 @@
       color: $basic_grey;
     }
 
-    // @for $i from 1 to 5 {
-    //   &:nth-child(#{$i})::after {
-    //     content: "#{$i}";
-    //   }
-    // }
+    @for $i from 1 to 5 {
+      &:nth-child(#{$i})::after {
+        content: "#{$i}";
+      }
+    }
   }
 
   .special-list__icon {
