@@ -7,12 +7,14 @@
 }
 
 .contacts__wrapper {
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
 
 .contacts__text {
+  width: 140px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -22,6 +24,7 @@
 }
 
 .contacs__address {
+  width: 140px;
   padding-right: 4px;
   font-size: 14px;
   line-height: 20px;
@@ -70,17 +73,16 @@
   }
 
   .contacts__wrapper {
-    position: absolute;
+    position: relative;
+    z-index: 3;
     top: 95px;
-    left: 0;
-    right: 0;
     width: 100%;
-    max-width: 1220px;
+    max-width: 565px;
     min-height: 198px;
     padding: 60px 80px 56px 80px;
     box-sizing: border-box;
     justify-content: start;
-    background: linear-gradient(to right, $clear-white 565px, transparent 565px);
+    background: $clear-white;
   }
 
   .contacts__text {
@@ -94,6 +96,9 @@
   }
 
   .contacts__map {
+    position: absolute;
+    z-index: 1;
+    top: 0;
     margin-top: 0;
   }
 }
