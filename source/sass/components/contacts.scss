@@ -72,15 +72,24 @@
   .contacts__wrapper {
     position: absolute;
     top: 95px;
-    left: 110px;
-    width: 565px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1220px;
     min-height: 198px;
     padding: 60px 80px 56px 80px;
     box-sizing: border-box;
-    background-color: $clear-white;
+    justify-content: start;
+    background: linear-gradient(to right, $clear-white 565px, transparent 565px);
+  }
+
+  .contacts__text {
+    max-width: 165px;
+    margin-right: 87px;
   }
 
   .contacs__address {
+    max-width: 165px;
     text-align: left;
   }
 
