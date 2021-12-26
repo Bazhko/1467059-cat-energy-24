@@ -3,14 +3,41 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 54px;
+  min-height: 40px;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  color: $clear-white;
-  background-color: $basic_green;
   border: none;
+
+  &_green {
+    color: $clear-white;
+    background-color: $basic_green;
+
+    &:hover {
+      color: $clear-white;
+      background-color: $basic_green-2;
+    }
+
+    &:active {
+      color: fade-out($clear-white, 0.3);
+      background-color: $basic_green-2;
+    }
+  }
+
+  &_grey {
+    color: $special_dark-grey;
+    background-color: $basic_grey;
+
+    &:hover {
+      background-color: $basic_grey-2;
+    }
+
+    &:active {
+      color: fade-out($special_dark-grey, 0.3);
+      background-color: $basic_grey-2;
+    }
+  }
 }

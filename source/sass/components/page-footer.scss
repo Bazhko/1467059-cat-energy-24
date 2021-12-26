@@ -11,17 +11,35 @@
 .page-footer__text-logo-link {
   display: block;
   width: 100%;
-  padding: 39px 0 32px 0;
+  padding: 39px 0 24px 0;
   text-align: center;
   border-bottom: 1px solid $special_light-grey;
-}
 
-.footer__social-list {
-  width: 100%;
-  padding: 23px 70px;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__social-list,
 .page-footer__text-logo-link {
   border-bottom: 1px solid $special_light-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    flex-direction: row;
+  }
+
+  .footer__social-list,
+  .page-footer__text-logo-link {
+    border-bottom: none;
+  }
+
+  .page-footer__text-logo-link {
+    width: min-content;
+  }
 }

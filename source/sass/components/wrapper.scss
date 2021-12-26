@@ -3,4 +3,35 @@
   min-width: 280px;
   padding: 0 20px;
   flex-direction: column;
+
+  &_form-inner {
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    padding: 0 30px;
+
+    &_form-inner {
+      padding: 0 69px 0 67px;
+    }
+  }
+
+  .form__fieldset_bordered .wrapper_form-inner {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    max-width: 1220px;
+    margin: auto;
+
+    &_form-inner {
+      width: 1220px;
+      max-width: 1220px;
+      padding: 0;
+    }
+  }
 }

@@ -1,12 +1,15 @@
 .catalog-products__list {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .catalog-products__item {
+  position: relative;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 40px;
+  margin: 0 -20px;
   padding: 19px 20px 25px 20px;
   border-bottom: 1px solid $special_light-grey;
 }
@@ -46,7 +49,113 @@
   line-height: 20px;
 }
 
-.catalog-products__show-more {
+.catalog-products__item_show-more {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.catalog-products__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog-products__list {
+    display: grid;
+    padding-top: 116px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 94px;
+  }
+
+  .catalog-products__item {
+    margin: 0;
+    margin-top: 47px;
+    padding: 141px 37px 39px 39px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0 auto auto 40px;
+    background: $basic_grey;
+    border: none;
+  }
+
+  .catalog-products__item-img_small {
+    width: 161px;
+    height: auto;
+  }
+
+  .catalog-products__item-img_big {
+    width: 168px;
+    height: auto;
+  }
+
+  .catalog-products__item-heading {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .item-heading {
+    width: 140px;
+    justify-self: center;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .catalog-products__item-img {
+    position: absolute;
+    bottom: 16px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .catalog-products__specs {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .catalog-products__specs-wrapper {
+    padding: 9px 0;
+    border-bottom: 1px solid $light-grey;
+  }
+
+  .catalog-product__button_order {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  .catalog-products__item_show-more {
+    background: $clear-white;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid $basic_grey;
+  }
+
+  .catalog-products__item-img_show-more {
+    top: 32px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .catalog-products__text {
+    width: 180px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .show-more__button {
+    min-height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-products__list {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
