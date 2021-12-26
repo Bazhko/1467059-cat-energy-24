@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Cat Energy</title>
 </head>
 <body class="page__body">
@@ -55,7 +59,10 @@
         <ul class="catalog-products__list">
           <li class="catalog-products__item">
               <h3 class="item-heading catalog-products__item-heading">Cat Energy PRO 500 г</h3>
-              <img class="catalog-products__item-img catalog-products__item-img_small" src="img/catalog-product-chiken-500.png" width="68" height="86" alt="Упаковка Cat energy pro 500г.(курица)">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-product-chiken-500-desktop.png" src="img/catalog-product-chiken-500-desktop@2x.png 2x">
+                <img class="catalog-products__item-img catalog-products__item-img_small" src="img/catalog-product-chiken-500.png"  width="68" height="86" srcset="img/catalog-product-chiken-500@2x.png 2x" alt="Упаковка Cat energy pro 500г.(курица)" >
+              </picture>
               <dl class="catalog-products__specs">
                 <div class="catalog-products__specs-wrapper">
                   <dt class="catalog-products__specs-title">Масса</dt>
