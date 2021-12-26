@@ -26,6 +26,10 @@
   border-bottom: 1px solid $light-grey;
 }
 
+picture {
+  display: contents;
+}
+
 .additional-products__specs {
   display: flex;
   justify-content: space-between;

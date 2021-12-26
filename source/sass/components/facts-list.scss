@@ -22,6 +22,7 @@
     transform: rotate(180deg);
     border: 1px solid $light-grey;
     border-radius: 3px;
+    justify-content: center;
   }
 
   &_cost {
@@ -61,7 +62,7 @@
 }
 
 .facts-list__description {
-  margin: 0 0 0 3px;
+  margin: 0;
   font-size: 12px;
   line-height: 12px;
 
@@ -115,6 +116,7 @@
   .facts-list__item_weight .facts-list__description,
   .facts-list__item_time .facts-list__description {
     width: max-content;
+    max-width: 142px;
     padding: 0 8px;
     align-self: center;
   }
