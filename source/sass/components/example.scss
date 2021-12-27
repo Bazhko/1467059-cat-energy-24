@@ -1,9 +1,9 @@
-.exemple {
+.example {
   padding: 27px 0 45px 0;
   background: $basic_grey;
 }
 
-.exemple__cost {
+.example__cost {
   margin-bottom: 40px;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
@@ -13,115 +13,115 @@
   text-align: center;
 }
 
-.exemple__section-heading {
+.example__section-heading {
   margin-bottom: 42px;
 }
 
-.exemple__text {
+.example__text {
   margin: 0 0 20px 0;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
 }
 
-.exemple__img-wrap {
+.example__img-wrap {
   position: relative;
   display: flex;
   min-height: 232px;
   margin-bottom: 20px;
 }
 
-.exemple__cat {
+.example__cat {
   position: absolute;
   top: 0;
   width: 100%;
   min-height: 232px;
 }
 
-.exemple__cat_fat {
+.example__cat_fat {
   z-index: 2;
-  background: url("../img/exemple_cat-mobile.png") center no-repeat;
+  background: url("../img/example_cat-mobile.png") center no-repeat;
   background-size: contain;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/exemple_cat-mobile@2x.png") center no-repeat;
+    background: url("../img/example_cat-mobile@2x.png") center no-repeat;
     background-size: contain;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .exemple {
+  .example {
     padding-top: 43px;
-    background: linear-gradient($clear-white 50%, $nav-line_grey 50%);
+    background: linear-gradient($clear-white 57%, $nav-line_grey 57%);
     border-top: 1px solid $nav-line_grey;
   }
 
-  .exemple__text {
+  .example__text {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 54px;
   }
 
-  .exemple__img-wrap,
-  .exemple__cat {
+  .example__img-wrap,
+  .example__cat {
     min-height: 511px;
   }
 
-  .exemple__img-wrap {
+  .example__img-wrap {
     width: 592px;
     align-self: center;
   }
 
-  .exemple__cat {
+  .example__cat {
     width: 50%;
   }
 
-  .exemple__cat_fat {
+  .example__cat_fat {
     z-index: 2;
     width: 50%;
-    background: url("../img/exemple_cat-fat-tablet.png") left no-repeat;
+    background: url("../img/example_cat-fat-tablet.png") left no-repeat;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/exemple_cat-fat-tablet@2x.png") left no-repeat;
+      background: url("../img/example_cat-fat-tablet@2x.png") left no-repeat;
       background-size: cover;
     }
   }
 
-  .exemple__cat_skinny {
+  .example__cat_skinny {
     z-index: 1;
     width: 50%;
     right: 0;
-    background: url("../img/exemple_cat-skinny-tablet.png") right no-repeat;
+    background: url("../img/example_cat-skinny-tablet.png") right no-repeat;
     background-size: cover;
 
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/exemple_cat-skinny-tablet@2x.png") right no-repeat;
+      background: url("../img/example_cat-skinny-tablet@2x.png") right no-repeat;
       background-size: cover;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .exemple {
+  .example {
     padding-top: 10px;
     background: linear-gradient($clear-white 20%, $basic_grey 20%);
     border-top: none;
   }
 
-  .exemple__wrapper {
+  .example__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
   }
 
-  .exemple__section-heading {
+  .example__section-heading {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
 
-  .exemple__text {
+  .example__text {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
@@ -131,7 +131,7 @@
     grid-row: 3 / 5;
   }
 
-  .exemple__img-wrap {
+  .example__img-wrap {
     grid-column: 2 / 4;
     grid-row: 1 / 4;
   }
