@@ -14,7 +14,7 @@
 }
 
 .contacts__text {
-  width: 140px;
+  max-width: 140px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -24,7 +24,7 @@
 }
 
 .contacs__address {
-  width: 140px;
+  max-width: 140px;
   padding-right: 4px;
   font-size: 14px;
   line-height: 20px;
@@ -45,13 +45,13 @@
   }
 
   .contacts__text {
-    width: 172px;
+    max-width: 172px;
     font-size: 20px;
     line-height: 26px;
   }
 
   .contacs__address {
-    width: 160px;
+    max-width: 160px;
     font-size: 16px;
     text-align: right;
   }
@@ -69,6 +69,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
+    min-height: 400px;
     padding-top: 0;
   }
 
