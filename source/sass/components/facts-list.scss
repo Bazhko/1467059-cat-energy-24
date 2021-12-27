@@ -19,10 +19,10 @@
     width: 100%;
     margin: 0;
     padding: 7px 0 13px 0;
+    justify-content: center;
     transform: rotate(180deg);
     border: 1px solid $light-grey;
     border-radius: 3px;
-    justify-content: center;
   }
 
   &_cost {
