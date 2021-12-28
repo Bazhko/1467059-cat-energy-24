@@ -11,7 +11,30 @@
 }
 
 .social-list__icon {
-  &:hover path {
+  &_vk,
+  &_insta,
+  &_fb {
+    fill: none;
+  }
+
+  &_vk,
+  &_insta {
+    fill: $special_grey-2;
+  }
+
+  &_fb {
+    stroke: $special_grey-2;
+    stroke-width: 1.1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  &_vk:hover,
+  &_insta:hover {
+    fill: $basic-green;
+  }
+
+  &_fb:hover {
     stroke: $basic-green;
   }
 
