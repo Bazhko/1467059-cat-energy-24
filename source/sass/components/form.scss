@@ -189,12 +189,16 @@
   }
 }
 
-.form__label .form__input_text_invalid {
+.form__label_text_invalid .form__input_text {
   outline: 2px solid $error-red;
 }
 
-.form__label_email::after .form__input_text {
+.form__label_text_invalid.form__label_email::after {
   @include icon-mail-color(FF8282);
+}
+
+.form__label_text_invalid.form__label_phone::after {
+  @include icon-phone-color(FF8282);
 }
 
 .form__radio {
