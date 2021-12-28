@@ -25,7 +25,7 @@
   margin-bottom: 20px;
 }
 
-.special-list__icon {
+.special-list__icon-bg {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,6 +34,10 @@
   margin-right: 20px;
   flex-shrink: 0;
   background-color: $basic_green;
+}
+
+.special-list__icon {
+  fill: $clear-white;
 }
 
 .special-list__text {
@@ -77,7 +81,7 @@
     }
   }
 
-  .special-list__icon {
+  .special-list__icon-bg {
     margin-bottom: 31px;
   }
 

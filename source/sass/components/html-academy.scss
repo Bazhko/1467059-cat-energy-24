@@ -6,12 +6,17 @@
   justify-content: space-between;
   align-items: center;
 
-  &:hover path {
-    fill: $basic-green;
-  }
-
   &:active {
     opacity: 0.3;
+  }
+}
+
+.html-academy__logo {
+  margin-top: 5px;
+  fill: $special_grey-2;
+
+  &:hover {
+    fill: $basic-green;
   }
 }
 
@@ -19,10 +24,6 @@
   margin: 0;
   padding-bottom: 3px;
   white-space: nowrap;
-}
-
-.html-academy__logo {
-  margin-top: 5px;
 }
 
 .html-academy__link {
