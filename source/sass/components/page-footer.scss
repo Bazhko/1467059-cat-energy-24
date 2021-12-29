@@ -5,13 +5,14 @@
 
 .page-footer__wrapper {
   display: flex;
+  padding-top: 20px;
   align-items: center;
 }
 
 .page-footer__text-logo-link {
   display: block;
   width: 100%;
-  padding: 39px 0 24px 0;
+  padding: 1    9px 0 24px 0;
   text-align: center;
   border-bottom: 1px solid $special_light-grey;
 
@@ -41,5 +42,6 @@
 
   .page-footer__text-logo-link {
     width: min-content;
+    padding: 19px 0;
   }
 }

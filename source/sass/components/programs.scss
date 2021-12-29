@@ -45,7 +45,6 @@
 }
 
 .programs__heading {
-  width: max-content;
   margin: 0;
   align-self: center;
   font-family: "Oswald", sans-serif;
@@ -53,6 +52,7 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
+  word-break: break-word;
 }
 
 .programs__description {
@@ -63,6 +63,7 @@
   line-height: 18px;
   color: $special_dark_grey;
   border-bottom: 1px solid $special_light-grey;
+  word-break: break-word;
 }
 
 .programs__link {
@@ -72,6 +73,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $clear-black;
+  word-break: break-word;
 
   &::after {
     content: "";
