@@ -9,12 +9,22 @@
   min-height: 302px;
   z-index: 1;
   background: $basic_green;
-  background-image: url("../img/promo_bg-mobile.jpg");
+  background-image: url("../img/promo_bg-mobile.webp");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/promo_bg-mobile@2x.jpg");
+    background-image: url("../img/promo_bg-mobile@2x.webp");
+  }
+}
+
+@supports not (background-image: url("../img/promo_bg-mobile.webp")) {
+  .promo::before {
+    background-image: url("../img/promo_bg-mobile.jpeg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo_bg-mobile@2x.jpg");
+    }
   }
 }
 
