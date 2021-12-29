@@ -64,7 +64,6 @@
 }
 
 .promo_button {
-  height: 40px;
   margin-top: 302px;
 }
 
@@ -144,6 +143,10 @@
       background: url("../img/promo-can-desktop@2x.png")  66% 0 no-repeat;
       background-size: 44%;
     }
+  }
+
+  .promo__slogan {
+    width: 45%;
   }
 
   .promo__section-heading {

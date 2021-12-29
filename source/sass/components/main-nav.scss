@@ -81,12 +81,15 @@
 }
 
 .main-nav__link {
+  max-width: 100%;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
+  overflow-wrap: break-word;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   color: $clear-black;
 }
 
@@ -125,10 +128,12 @@
   }
 
   .main-nav__list {
-    display: flex;
     position: static;
     z-index: 3;
+    display: flex;
+    margin-left: 20px;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: baseline;
   }
 
@@ -140,6 +145,7 @@
 
   .main-nav__item {
     border: none;
+    max-width: 200px;
     min-height: 36px;
 
 
