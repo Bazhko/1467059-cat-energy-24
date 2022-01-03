@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="/fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
@@ -60,7 +64,9 @@
           <li class="catalog-products__item">
               <h3 class="item-heading catalog-products__item-heading">Cat Energy PRO 500 г</h3>
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-product-chiken-500-desktop.png 1x, img/catalog-product-chiken-500-desktop@2x.png 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-product-chiken-500-desktop.webp 1x, img/catalog-product-chiken-500-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-product-chiken-500.webp 1x, img/catalog-product-chiken-500@2x.webp 2x">
+                <source media="(min-width: 767px)" srcset="img/catalog-product-chiken-500-desktop.png 1x, img/catalog-product-chiken-500-desktop@2x.png 2x">
                 <img class="catalog-products__item-img catalog-products__item-img_small" src="img/catalog-product-chiken-500.png"  width="68" height="86" srcset="img/catalog-product-chiken-500@2x.png 2x" alt="Упаковка Cat energy pro 500г.(курица)" >
               </picture>
               <dl class="catalog-products__specs">
@@ -82,6 +88,8 @@
           <li class="catalog-products__item">
               <h3 class="item-heading catalog-products__item-heading">Cat Energy PRO 1000 г</h3>
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-product-chiken-1000-desktop.webp 1x, img/catalog-product-chiken-1000-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-product-chiken-1000.webp 1x, img/catalog-product-chiken-1000@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog-product-chiken-1000-desktop.png 1x, img/catalog-product-chiken-1000-desktop@2x.png 2x">
                 <img class="catalog-products__item-img catalog-products__item-img_big" src="img/catalog-product-chiken-1000.png" width="84" height="100" srcset="img/catalog-product-chiken-1000@2x.png 2x" alt="Упаковка Cat energy pro 1000г.(курица)">
               </picture>
@@ -104,6 +112,8 @@
           <li class="catalog-products__item">
               <h3 class="item-heading catalog-products__item-heading">Cat Energy PRO 500 г</h3>
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-product-fish-500-desktop.webp 1x, img/catalog-product-fish-500-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-product-fish-500.webp 1x, img/catalog-product-fish-500@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog-product-fish-500-desktop.png 1x, img/catalog-product-fish-500-desktop@2x.png 2x">
                 <img class="catalog-products__item-img catalog-products__item-img_small" src="img/catalog-product-fish-500.png" width="68" height="78" srcset="img/catalog-product-fish-500@2x.png 2x" alt="Упаковка Cat energy pro 1000г.(курица)">
               </picture>
@@ -126,6 +136,8 @@
           <li class="catalog-products__item">
               <h3 class="item-heading catalog-products__item-heading">Cat Energy PRO 1000 г</h3>
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-product-fish-1000-desktop.webp 1x, img/catalog-product-fish-1000-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-product-fish-1000.webp 1x, img/catalog-product-fish-1000@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog-product-fish-1000-desktop.png 1x, img/catalog-product-fish-1000-desktop@2x.png 2x">
                 <img class="catalog-products__item-img catalog-products__item-img_big" src="img/catalog-product-fish-1000.png" width="84" height="100" srcset="img/catalog-product-fish-1000@2x.png 2x" alt="Упаковка Cat energy pro 1000г.(курица)">
               </picture>
@@ -148,6 +160,8 @@
           <li class="catalog-products__item">
               <h3 class="item-heading catalog-products__item-heading">Cat Energy slim 500 г</h3>
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-product-buckwheat-500-desktop.webp 1x, img/catalog-product-buckwheat-500-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-product-buckwheat-500.webp 1x, img/catalog-product-buckwheat-500@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog-product-buckwheat-500-desktop.png 1x, img/catalog-product-buckwheat-500-desktop@2x.png 2x">
                 <img class="catalog-products__item-img catalog-products__item-img_small" src="img/catalog-product-buckwheat-500.png" width="68" height="78" srcset="img/catalog-product-buckwheat-500@2x.png 2x" alt="Упаковка Cat energy pro 500г.(Гречка)">
               </picture>
@@ -170,6 +184,8 @@
           <li class="catalog-products__item">
               <h3 class="item-heading catalog-products__item-heading">Cat Energy slim 1000 г</h3>
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-product-buckwheat-1000-desktop.webp 1x, img/catalog-product-buckwheat-1000-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-product-buckwheat-1000.webp 1x, img/catalog-product-buckwheat-1000@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog-product-buckwheat-1000-desktop.png 1x, img/catalog-product-buckwheat-1000-desktop@2x.png 2x">
                 <img class="catalog-products__item-img catalog-products__item-img_big" src="img/catalog-product-buckwheat-1000.png" width="84" height="100" srcset="img/catalog-product-buckwheat-1000@2x.png 2x" alt="Упаковка Cat energy pro 1000г.(Гречка)">
               </picture>
@@ -192,6 +208,8 @@
           <li class="catalog-products__item">
               <h3 class="item-heading catalog-products__item-heading">Cat Energy slim 500 г</h3>
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-product-rice-500-desktop.webp 1x, img/catalog-product-rice-500-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-product-rice-500.webp 1x, img/catalog-product-rice-500@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog-product-rice-500-desktop.png 1x, img/catalog-product-rice-500-desktop@2x.png 2x">
                 <img class="catalog-products__item-img catalog-products__item-img_small" src="img/catalog-product-rice-500.png" width="72" height="84" srcset="img/catalog-product-rice-500@2x.png" alt="Упаковка Cat energy pro 500г.(Рис)">
               </picture>
@@ -212,10 +230,10 @@
               <button class="button button_green catalog-product__button_order" type="button">заказать</button>
           </li>
           <li class="catalog-products__item catalog-products__item_show-more">
-            <svg class="catalog-products__item-img catalog-products__item-img_show-more" width="30" height="30">
+            <svg class="catalog-products__item-img catalog-products__item-img_show-more" width="30" height="30" viewBox="0 0 30 30" aria-labelledby="show-more_title">
               <use href="img/sprite.svg#show-more_plus-icon"></use>
             </svg>
-            <h3 class="item-heading item-heading_show-more">Показать еще 100500 товаров</h3>
+            <h3 id="show-more_title" class="item-heading item-heading_show-more">Показать еще 100500 товаров</h3>
             <p class="catalog-products__text">На самом деле вкусов гораздо больше!</p>
             <button class="button button_grey catalog-product__button_order " type="button">показать все</button>
           </li>
@@ -263,10 +281,10 @@
         </ul>
 
         <div class="additional-products__promo">
-          <svg class="additional-products__promo-icon" width="78" height="80">
+          <svg class="additional-products__promo-icon" width="78" height="80" viewBox="0 0 78 80" show-more_title="additional-products__promo-title">
             <use href="img/sprite.svg#gift-icon"></use>
           </svg>
-          <p class="additional-products__promo-text">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
+          <p id="additional-products__promo-title" class="additional-products__promo-text">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
         </div>
       </div>
     </section>
@@ -293,7 +311,7 @@
         <li class="social-list__item">
           <a class="social-list__link" href="#">
             <span class="visually-hidden">VKontakte</span>
-            <svg class="social-list__icon social-list__icon_vk" width="23" height="13">
+            <svg class="social-list__icon social-list__icon_vk" width="23" height="13" viewBox="0 0 23 13" aria-label="Ссылка на нас Вконтакте">
               <use href="img/sprite.svg#social_vk"></use>
             </svg>
           </a>
@@ -301,7 +319,7 @@
         <li class="social-list__item">
           <a class="social-list__link" href="#">
             <span class="visually-hidden">Instagram</span>
-            <svg class="social-list__icon social-list__icon_insta" width="16" height="16">
+            <svg class="social-list__icon social-list__icon_insta" width="16" height="16" viewBox="0 0 16 16" aria-label="Ссылка на нас инстаграм">
               <use href="img/sprite.svg#social_insta"></use>
             </svg>
           </a>
@@ -309,7 +327,7 @@
         <li class="social-list__item">
           <a class="social-list__link" href="#">
             <span class="visually-hidden">Facebook</span>
-            <svg class="social-list__icon social-list__icon_fb" width="13" height="20">
+            <svg class="social-list__icon social-list__icon_fb" width="13" height="20" viewBox="0 0 13 20" aria-label="Ссылка на нас фейсбук">
               <use href="img/sprite.svg#social_fb"></use>
             </svg>
           </a>
@@ -322,7 +340,7 @@
         </a>
 
         <a class="html-academy__link" href="#">
-          <svg class="html-academy__logo" width="27" height="34">
+          <svg class="html-academy__logo" width="27" height="34" viewBox="0 0 27 34" aria-label="Ссылка на сайт академии">
             <use href="img/sprite.svg#html-academy-logo"></use>
           </svg>
         </a>

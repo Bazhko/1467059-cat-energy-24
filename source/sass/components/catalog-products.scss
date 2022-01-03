@@ -55,6 +55,14 @@
   align-items: center;
 }
 
+.catalog-products__item-img_show-more {
+  top: 32px;
+  width: 30px;
+  height: 30px;
+  stroke: $plus-icon-grey;
+  stroke-width: 2;
+}
+
 .catalog-products__text {
   font-size: 12px;
   line-height: 16px;
@@ -115,6 +123,10 @@
     grid-row: 3 / 4;
     font-size: 16px;
     line-height: 16px;
+
+    &-description {
+      min-width: 46px;
+    }
   }
 
   .catalog-products__specs-wrapper {

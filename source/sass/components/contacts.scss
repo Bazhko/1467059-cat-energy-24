@@ -71,13 +71,13 @@
     position: relative;
     min-height: 400px;
     padding-top: 0;
+    background-color: $basic_grey;
   }
 
   .contacts__wrapper {
-    position: relative;
     z-index: 3;
-    top: 95px;
     width: 100%;
+    margin: 95px 0;
     max-width: 565px;
     min-height: 198px;
     padding: 60px 80px 56px 80px;
@@ -100,6 +100,7 @@
     position: absolute;
     z-index: 1;
     top: 0;
+    height: 100%;
     margin-top: 0;
   }
 }

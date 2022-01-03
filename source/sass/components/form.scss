@@ -54,7 +54,6 @@
 
 .form__label {
   display: flex;
-  min-width: max-content;
   align-items: center;
   justify-content: space-between;
   font-family: "Oswald", sans-serif;
@@ -247,7 +246,7 @@
 }
 
 .form__button {
-  height: 40px;
+  min-height: 40px;
   margin-top: 10px;
 }
 
@@ -341,7 +340,7 @@
 
   .form__button {
     width: 282px;
-    height: 52px;
+    min-height: 52px;
   }
 
   .form__notation {
@@ -359,7 +358,7 @@
     display: grid;
     max-width: 1220px;
     margin: auto;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 570px);
     column-gap: 80px;
   }
 
@@ -385,7 +384,7 @@
     &_text,
     &_textarea,
     &::placeholder {
-      padding: 10px 20px;
+      padding: 10px 45px 10px 20px;
       font-size: 20px;
       line-height: 30px;
     }
