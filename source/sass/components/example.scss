@@ -40,12 +40,23 @@
 
 .example__cat_fat {
   z-index: 2;
-  background: url("../img/example_cat-mobile.png") center no-repeat;
+  background-image: url("../img/example_cat-mobile.webp");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: contain;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/example_cat-mobile@2x.png") center no-repeat;
-    background-size: contain;
+    background-image: url("../img/example_cat-mobile@2x.webp");
+  }
+}
+
+@supports not (background-image: url("../img/example_cat-mobile.webp")) {
+  .example__cat_fat {
+    background-image: url("../img/example_cat-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/example_cat-mobile@2x.png");
+    }
   }
 }
 
@@ -79,12 +90,23 @@
   .example__cat_fat {
     z-index: 2;
     width: 50%;
-    background: url("../img/example_cat-fat-tablet.png") left no-repeat;
+    background-image: url("../img/example_cat-fat-tablet.webp");
+    background-position: left;
+    background-repeat: no-repeat;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/example_cat-fat-tablet@2x.png") left no-repeat;
-      background-size: cover;
+      background-image: url("../img/example_cat-fat-tablet@2x.webp");
+    }
+  }
+
+  @supports not (background-image: url("../img/example_cat-fat-tablet.webp")) {
+    .example__cat_fat {
+      background-image: url("../img/example_cat-fat-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/example_cat-fat-tablet@2x.png");
+      }
     }
   }
 
@@ -92,13 +114,26 @@
     z-index: 1;
     width: 50%;
     right: 0;
-    background: url("../img/example_cat-skinny-tablet.png") right no-repeat;
+    background-image: url("../img/example_cat-skinny-tablet.webp");
+    background-position: right;
+    background-repeat: no-repeat;
     background-size: cover;
 
-
     @media (min-resolution: 2dppx) {
-      background: url("../img/example_cat-skinny-tablet@2x.png") right no-repeat;
+      background: url("../img/example_cat-skinny-tablet@2x.webp");
+      background-position: right;
+      background-repeat: no-repeat;
       background-size: cover;
+    }
+  }
+
+  @supports not (background-image: url("../img/example_cat-skinny-tablet.webp")) {
+    .example__cat_skinny {
+      background-image: url("../img/example_cat-skinny-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/example_cat-skinny-tablet@2x.png");
+      }
     }
   }
 }

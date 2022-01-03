@@ -47,13 +47,23 @@ picture {
   align-items: center;
   justify-content: space-around;
   background-color: $transparent_green;
-  background-image: url("../img/catalog-promo__bg.jpg");
+  background-image: url("../img/catalog-promo__bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/catalog-promo__bg@2x.jpg");
+    background-image: url("../img/catalog-promo__bg@2x.webp");
+  }
+}
+
+@supports not (background-image: url("../img/catalog-promo__bg.webp")) {
+  .additional-products__promo {
+    background-image: url("../img/catalog-promo__bg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-promo__bg@2x.jpg");
+    }
   }
 }
 
@@ -97,10 +107,20 @@ picture {
     margin: 69px 0 76px 0;
     min-height: 200px;
     flex-direction: row;
-    background-image: url("../img/catalog-promo__bg_tablet.jpg");
+    background-image: url("../img/catalog-promo__bg_tablet.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/catalog-promo__bg_tablet@2x.jpg");
+      background-image: url("../img/catalog-promo__bg_tablet@2x.webp");
+    }
+  }
+
+  @supports not (background-image: url("../img/catalog-promo__bg_tablet.webp")) {
+    .additional-products__promo {
+      background-image: url("../img/catalog-promo__bg_tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog-promo__bg_tablet@2x.jpg");
+      }
     }
   }
 
@@ -145,11 +165,20 @@ picture {
     flex-direction: column;
     justify-content: space-between;
     padding: 56px 0 28px 0;
-
-    background-image: url("../img/catalog-promo__bg_desktop.jpg");
+    background-image: url("../img/catalog-promo__bg_desktop.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/catalog-promo__bg_desktop@2x.jpg");
+      background-image: url("../img/catalog-promo__bg_desktop@2x.webp");
+    }
+  }
+
+  @supports not (background-image: url("../img/catalog-promo__bg_desktop.webp")) {
+    .additional-products__promo {
+      background-image: url("../img/catalog-promo__bg_desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog-promo__bg_desktop@2x.jpg");
+      }
     }
   }
 
