@@ -77,13 +77,6 @@ const svg = () =>
 const sprite = () => {
   return gulp.src('source/img/icons/*svg')
     .pipe(svgo())
-    .pipe(cheerio({
-      run: ($) => {
-          $('[fill]').removeAttr('fill'),
-          $('[stroke]').removeAttr('stroke');
-      },
-      parserOptions: { xmlMode: true }
-  }))
     .pipe(svgstore({
       inlineSvg: true
     }))

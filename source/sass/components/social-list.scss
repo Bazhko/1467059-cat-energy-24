@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   margin: 0;
-  padding: 20px 10px 15px 0;
+  padding: 20px 10px 11px 0;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -50,15 +50,34 @@
   }
 
   &:nth-child(2) {
-    margin-right: 39px;
+    margin-right: 32px;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .social-list {
+    padding: 20px 10px 15px 29px;
+  }
+
+  .social-list__item {
+    &:first-child {
+      margin-right: 28px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 19px;
+      padding-top: 3px;
+    }
+
+    &:last-child {
+      padding-top: 4px;
+    }
+  }
+
   .social-list__icon {
     &_vk {
-      width: 29px;
-      height: 17px;
+      width: 30px;
+      height: 22px;
     }
 
     &_insta {
@@ -67,8 +86,8 @@
     }
 
     &_fb {
-      width: auto;
-      height: 27px;
+      width: 25px;
+      height: 34px;
     }
   }
 }

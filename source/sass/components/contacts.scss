@@ -41,11 +41,13 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    padding: 0 69px;
+    padding: 33px 36px;
+    align-items: center;
   }
 
   .contacts__text {
     max-width: 172px;
+    padding-left: 4px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -80,7 +82,7 @@
     margin: 95px 0;
     max-width: 565px;
     min-height: 198px;
-    padding: 60px 80px 56px 80px;
+    padding: 51px 70px 56px 80px;
     box-sizing: border-box;
     justify-content: start;
     background: $clear-white;
@@ -88,7 +90,8 @@
 
   .contacts__text {
     max-width: 165px;
-    margin-right: 87px;
+    margin-right: 96px;
+    padding: 5px 0 0;
   }
 
   .contacs__address {

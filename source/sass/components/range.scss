@@ -58,11 +58,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .range {
+    padding: 0 66px 0 71px;
+  }
+
   .range__text {
     font-size: 20px;
   }
 
   .range__scale {
+    margin: 0 23px;
     height: 6px;
     padding: 3px 0;
     background-color: $light-grey_range-bar;
@@ -102,5 +107,15 @@
       border: 1px solid $basic-green;
       box-shadow: (0 3px 5px rgba(0, 0, 0, 0.2));
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+    align-self: end;
+    margin-bottom: 23px;
+    padding: 0px 7px 0 32px;
   }
 }

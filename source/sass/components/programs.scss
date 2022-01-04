@@ -103,9 +103,11 @@
 @media (min-width: $tablet-width) {
   .programs__item {
     min-height: 372px;
-    padding: 77px 60px 57px 53px;
+    margin-bottom: 30px;
+    padding: 66px 62px 57px 53px;
     grid-template-columns: auto auto;
-    column-gap: 54px;
+    grid-template-rows: auto auto auto;
+    column-gap: 50px;
   }
 
   .programs__item-logo {
@@ -116,27 +118,30 @@
   }
 
   .programs__logo-svg_slim {
-    bottom: 15px;
-    left: 32px;
+    bottom: 17px;
+    left: 30px;
     width: 140px;
     height: 194px;
   }
 
   .programs__logo-svg_pro {
-    bottom: 50px;
-    left: -40px;
+    bottom: 45px;
+    left: -34px;
     width: 268px;
     height: 112px;
   }
 
   .programs__heading {
     grid-column: 1 / 2;
+    padding: 0;
     font-size: 36px;
     line-height: 36px;
   }
 
   .programs__description {
     grid-column: 1 / 2;
+    margin: 0;
+    padding: 15px 0 8px 0;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -144,8 +149,13 @@
 
   .programs__link {
     grid-column: 1 / 2;
+    align-self: flex-end;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .programs__link-text {
+    margin-right: 24px;
   }
 }
 
@@ -160,13 +170,15 @@
 
   .programs__item {
     min-width: 570px;
-    padding: 40px 51px 59px 51px;
+    padding: 43px 52px 57px 52px;
     grid-template-columns: min-content auto;
+    column-gap: 61px;
   }
 
   .programs__item-logo {
     width: 100px;
     height: 100px;
+    margin: 0;
     grid-column: 1 / 2;
     grid-row: 1 / 1;
   }
@@ -174,6 +186,7 @@
   .programs__heading {
     grid-column: 2 / 3;
     grid-row: 1 / 1;
+    padding-bottom: 5px;
     font-size: 36px;
     line-height: 36px;
     align-self: center;
@@ -181,6 +194,7 @@
 
   .programs__description {
     grid-column: 1 / -1;
+    padding-top: 38px;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -192,16 +206,20 @@
     line-height: 30px;
   }
 
+  .programs__link-text {
+    margin-right: 27px;
+  }
+
   .programs__logo-svg_slim {
-    bottom: 7px;
-    left: 7px;
+    bottom: 9px;
+    left: 5px;
     width: 90px;
     height: 97px;
   }
 
   .programs__logo-svg_pro {
-    bottom: 25px;
-    left: -20px;
+    bottom: 24px;
+    left: -19px;
     width: 134px;
     height: 56px;
   }

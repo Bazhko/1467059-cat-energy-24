@@ -56,7 +56,7 @@
   text-transform: uppercase;
 
   &_cost {
-    min-width: 122px;
+    min-width: 125px;
     font-family: "Oswald", sans-serif;
     font-size: 14px;
   }
@@ -68,7 +68,7 @@
   line-height: 12px;
 
   &_cost {
-    min-width: 63px;
+    min-width: 66px;
     font-family: "Oswald", sans-serif;
     font-size: 14px;
   }
@@ -77,7 +77,7 @@
 @media (min-width: $tablet-width) {
   .facts-list {
     width: 100%;
-    margin-bottom: 72px;
+    margin-bottom: 80px;
     grid-template-columns: 162px 162px auto;
     grid-template-rows: 1fr;
     column-gap: 42px;
@@ -86,12 +86,17 @@
 
   .facts-list__item {
     &_cost {
-      margin: 0 0 0 auto;
+      margin: 11px 1px 0 auto;
       grid-column: 3 / 4;
       grid-row: 1 / 2;
       flex-direction: column;
       align-items: end;
       justify-content: flex-start;
+    }
+
+    &_weight,
+    &_time {
+      padding: 10px 0 15px;
     }
   }
 
@@ -127,10 +132,13 @@
 
 @media (min-width: $desktop-width) {
   .facts-list {
+    margin-bottom: 21px;
     grid-template-columns: 162px 162px;
     grid-template-rows: min-content auto;
+    grid-row: 3 / 4;
     column-gap: 42px;
-    row-gap: 47px;
+    row-gap: 44px;
+    align-self: end;
   }
 
   .facts-list__item_cost {
@@ -138,9 +146,10 @@
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     margin-left: 0;
+    margin-bottom: 3px;
   }
 
   .facts-list__title_cost {
-    margin: 0 60px 0 0;
+    margin: 0 63px 0 0;
   }
 }
