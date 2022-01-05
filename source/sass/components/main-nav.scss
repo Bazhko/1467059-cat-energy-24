@@ -6,7 +6,7 @@
   position: relative;
   width: 24px;
   height: 18px;
-  margin: 0 0 0 auto;
+  margin: 4px 0 0 auto;
   padding: 0;
   box-sizing: border-box;
   border: none;
@@ -117,6 +117,7 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     margin: 0 0 0 auto;
+    padding-top: 8px;
   }
 
   .main-nav__toggle {
@@ -146,11 +147,11 @@
   .main-nav__item {
     border: none;
     max-width: 200px;
-    min-height: 36px;
+    min-height: 40px;
 
 
     &:not(:last-child) {
-      margin-right: 34px;
+      margin-right: 36px;
     }
 
     &_active {
@@ -168,10 +169,23 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    padding-top: 5px;
+  }
+
   .main-nav__list {
     position: relative;
     top: 0;
     background: none;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main-nav__item:not(:last-child) {
+    margin-right: 35px;
   }
 
   .main-nav__item_white-line {

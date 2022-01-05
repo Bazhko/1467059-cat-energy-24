@@ -12,7 +12,7 @@
 .page-footer__text-logo-link {
   display: block;
   width: 100%;
-  padding: 1    9px 0 24px 0;
+  padding: 19px 0 24px 0;
   text-align: center;
   border-bottom: 1px solid $special_light-grey;
 
@@ -32,7 +32,10 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
+    min-height: 147px;
+    padding-top: 0;
     flex-direction: row;
+    box-sizing: border-box;
   }
 
   .footer__social-list,
@@ -42,6 +45,12 @@
 
   .page-footer__text-logo-link {
     width: min-content;
-    padding: 19px 0;
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    padding: 0;
   }
 }

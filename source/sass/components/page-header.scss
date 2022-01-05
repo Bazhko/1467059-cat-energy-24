@@ -12,9 +12,13 @@
 .page-header__logo-wrapper {
   display: flex;
   flex-direction: row;
-  width: calc(50% + 50px);
+  width: calc(50% + 51px);
   justify-content: space-between;
   align-items: center;
+}
+
+.page-header__logo_text {
+  padding-top: 5px;
 }
 
 .page-header__logo-link {
@@ -50,23 +54,29 @@
 
   .page-header__logo-image {
     margin-right: 12px;
-    width: 70px;
-    height: 50px;
+    width: 61px;
+    height: 51px;
   }
 
   .page-header__wraper {
+    padding-top: 25px;
     border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    padding-top: 55px;
+  .page-header__wraper {
+    padding-top: 53px;
   }
 
   .page-header__logo-image {
-    margin-right: 15px;
-    width: 80px;
+    margin-right: 13px;
+    width: 71px;
     height: 60px;
+  }
+
+  .page-header__logo-text {
+    height: 22px;
+    width: 118px;
   }
 }

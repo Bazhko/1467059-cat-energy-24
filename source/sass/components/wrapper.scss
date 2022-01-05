@@ -5,6 +5,10 @@
   flex-direction: column;
 }
 
+.wrapper_form-heading {
+  border-top: 1px solid #d9d9d9;
+}
+
 @media (min-width: $tablet-width) {
   .wrapper {
     padding: 0 30px;

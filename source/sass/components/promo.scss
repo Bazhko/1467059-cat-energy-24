@@ -33,16 +33,23 @@
   min-height: 302px;
   padding-top: 27px;
   z-index: 2;
-  background: url("../img/promo-can-mobile.png");
+  background-image: url("../img/promo-can-mobile.webp");
   background-repeat: no-repeat;
   background-position: 50% 80%;
   background-size: 280px 270px;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/promo-can-mobile@2x.png");
-    background-repeat: no-repeat;
-    background-position: 50% 80%;
-    background-size: 280px 270px;
+    background-image: url("../img/promo-can-mobile@2x.webp");
+  }
+}
+
+@supports not (background-image: url("../img/promo-can-mobile.webp")) {
+  .promo__wrapper_content {
+    background-image: url("../img/promo-can-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-can-mobile@2x.png");
+    }
   }
 }
 
@@ -73,18 +80,30 @@
   }
 
   .promo__wrapper_content {
-    padding: 50px 230px 528px 120px;
-    background: url("../img/promo-can-tablet.png") 41% 92% no-repeat;
+    padding: 47px 230px 488px 117px;
+    background-image: url("../img/promo-can-tablet.webp");
+    background-position: 49% 109%;
+    background-repeat: no-repeat;
     background-size: 709px 609px;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/promo-can-tablet@2x.png") 41% 92% no-repeat;
-      background-size: 709px 609px;
+      background-image: url("../img/promo-can-tablet@2x.webp");
+    }
+  }
+
+  @supports not (background-image: url("../img/promo-can-tablet.webp")) {
+    .promo__wrapper_conten {
+      background-image: url("../img/promo-can-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/promo-can-tablet@2x.png") 41% 92% no-repeat;
+        background-size: 709px 609px;
+      }
     }
   }
 
   .promo__section-heading {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -93,6 +112,7 @@
 
   .promo__slogan {
     margin-bottom: 49px;
+    padding-left: 2px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -100,7 +120,8 @@
   }
 
   .promo_button {
-    margin: 0;
+    min-height: 54px;
+    margin: 0 0 0 3px;
     width: 244px;
     font-size: 20px;
     line-height: 20px;
@@ -120,33 +141,60 @@
     display: block;
     width: 50%;
     min-height: 694px;
-    background-image: url("../img/promo_bg-desktop.jpg");
+    background-image: url("../img/promo_bg-desktop.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo_bg-desktop@2x.jpg");
+      background-image: url("../img/promo_bg-desktop@2x.webp");
+    }
+  }
+
+  @supports not (background-image: url("../img/promo_bg-desktop.webp")) {
+    .promo__wrapper_content {
+      background-image: url("../img/promo_bg-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo_bg-desktop@2x.jpg");
+      }
     }
   }
 
   .promo__wrapper_content {
     width: 100%;
-    padding: 50px 80px 267px 80px;
+    padding: 93px 80px 247px 80px;
     padding-right: 80px;
     padding-left: 80px;
     box-sizing: border-box;
-    background: url("../img/promo-can-desktop.png") 66% 0 no-repeat;
-    background-size: 44%;
+    background-image: url("../img/promo-can-desktop.webp");
+    background-size: 45%;
+    background-position: 450px 12px;
+    background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/promo-can-desktop@2x.png")  66% 0 no-repeat;
-      background-size: 44%;
+      background-image: url("../img/promo-can-desktop@2x.webp");
     }
+  }
+
+  @supports not (background-image: url("../img/promo-can-desktop.webp")) {
+    .promo__wrapper_content {
+      background-image: url("../img/promo-can-desktop.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-can-desktop@2x.png");
+      }
+    }
+  }
+
+  .promo_button {
+    margin: 0;
   }
 
   .promo__slogan {
     width: 45%;
+    margin-bottom: 51px;
+    padding-left: 0;
   }
 
   .promo__section-heading {
