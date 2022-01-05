@@ -6,7 +6,7 @@
   z-index: 2;
   width: max-content;
   max-width: 100%;
-  padding: 25px 22px 36px 0;
+  padding: 25px 22px 35px 0;
   font-size: 24px;
   line-height: 24px;
   background-color: $clear-white;
@@ -19,7 +19,11 @@
 }
 
 .additional-products__item {
-  padding-bottom: 19px;
+  &:nth-child(2) {
+    padding-top: 10px;
+  }
+
+  padding: 11px 0 18px 0;
   border-top: 1px solid $light-grey;
 }
 
@@ -31,8 +35,14 @@ picture {
   display: contents;
 }
 
+.additional-products__item-heading {
+  margin-bottom: 11px;
+  padding-left: 1px;
+}
+
 .additional-products__specs {
   display: flex;
+  margin: 0 0 15px 0;
   justify-content: space-between;
   font-size: 14px;
   font-weight: 400;
@@ -45,7 +55,7 @@ picture {
   min-height: 289px;
   margin: 35px 0;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: $transparent_green;
   background-image: url("../img/catalog-promo__bg.webp");
   background-repeat: no-repeat;
@@ -68,45 +78,81 @@ picture {
 }
 
 .additional-products__promo-icon {
-  margin-top: 40px;
+  margin-top: 59px;
   fill: $clear-white;
 }
 
 .additional-products__promo-text {
+  margin: 0 3px 41px 0;
   font-size: 16px;
   line-height: 20px;
   color: $clear-white;
   text-align: center;
 }
 
+.additional-products__button_order {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 @media (min-width: $tablet-width) {
+  .additional-products__wrapper {
+    padding: 68px 30px 0;
+  }
+
+  .additional-products__section-heading {
+    margin-bottom: 80px;
+    padding: 0 37px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additional-products__list {
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
   .additional-products__item {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0 39px 19px 39px;
+    padding: 25px 37px 27px 37px;
   }
 
-  .additional-products__section-heading {
-    padding: 25px 39px 36px 39px;
-    font-size: 36px;
-    line-height: 36px;
+  .additional-products__item:nth-child(2) {
+    padding-top: 24px;
+  }
+
+  .additional-products__item:nth-child(2) .additional-products__volume {
+    margin-right: 58px;
   }
 
   .additional-products__item-heading {
+    margin-bottom: 22px;
     text-align: left;
   }
 
   .additional-products__specs {
+    padding-right: 1px;
     font-size: 16px;
     line-height: 20px;
   }
 
+  .additional-products__volume {
+    margin-right: 49px;
+  }
+
+  .additional-products__price {
+    margin: 0;
+  }
+
   .additional-products__promo {
-    margin: 69px 0 76px 0;
+    margin: 69px 0 76px 1px;
+    padding: 0 122px 0 74px;
     min-height: 200px;
     flex-direction: row;
+    align-items: center;
     background-image: url("../img/catalog-promo__bg_tablet.webp");
 
     @media (min-resolution: 2dppx) {
@@ -127,10 +173,11 @@ picture {
   .additional-products__promo-icon {
     width: 80px;
     height: auto;
-    margin: 0;
+    margin: -4px 0 0 0;
   }
 
   .additional-products__promo-text {
+    margin: 4px 3px 0 0;
     text-align: left;
   }
 }

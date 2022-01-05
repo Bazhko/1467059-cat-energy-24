@@ -1,11 +1,20 @@
-.page-main__wrapper {
-  padding: 25px 20px 41px 20px;
-  border-bottom: 1px solid $special_light-grey;
+.page-main__catalog-heading-wrapper {
+  padding: 27px 20px 40px 20px;
+  border: 1px solid $special_light-grey;
+  border-left: none;
+  border-right: none;
 }
 
 @media (min-width: $tablet-width) {
-  .page-main__wrapper {
-    padding: 45px 30px 0 30px;
-    border-bottom: none;
+  .page-main__catalog-heading-wrapper {
+    padding: 48px 30px 0 30px;
+    border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main__catalog-heading-wrapper {
+    padding-top: 58px;
+  }
+}
+
