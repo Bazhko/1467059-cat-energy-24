@@ -150,8 +150,12 @@
     min-height: 40px;
 
 
-    &:not(:last-child) {
-      margin-right: 36px;
+    &:first-child {
+      margin-right: 35px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 37px;
     }
 
     &_active {
