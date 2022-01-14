@@ -1,3 +1,11 @@
 .form-main__section-heading {
   padding: 27px 0 37px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 2px 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 0 56px;
+  }
 }
