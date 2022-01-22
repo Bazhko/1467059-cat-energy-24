@@ -14,6 +14,12 @@
   border-bottom: 1px solid $special_light-grey;
 }
 
+.catalog-products__item-des-link {
+  display: block;
+  text-decoration: none;
+  color: $special_dark-grey-2;
+}
+
 .catalog-products__item-heading {
   margin: 15px 0 14px 0;
   width: 76px;
@@ -110,7 +116,7 @@
   .catalog-products__item {
     margin: 0;
     margin-top: 47px;
-    padding: 141px 37px 39px 39px;
+    padding: 141px 37px 40px 39px;
     grid-template-columns: 1fr;
     grid-template-rows: 0 auto auto 40px;
     background: $basic_grey;
